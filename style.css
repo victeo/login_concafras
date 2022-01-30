@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: rgb(41, 41, 41);
+  overflow-x: hidden;
+  height: 100%;
+  background-image: url("img/bg1.jpg"), url("img/bg.jpg");
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+.box {
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  width: 35%;
+  height: 500px;
+  margin: 30px auto;
+  text-align: center;
+  padding: 20px 0 0 0;
+  border-radius: 4px;
+  box-shadow: 0px 30px 50px 0px rgb(0 0 0 / 20%);
+}
+
+/* Estilo da logo */
+
+.box__logo h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+}
+.form img {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form__text {
+  font-size: 1.5rem;
+}
+
+.form__input input {
+  width: 80%;
+  padding: 15px;
+  color: #8a8b8e;
+  border: 1px solid #c2c0ca;
+  font-style: normal;
+  font-size: 16px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  background: none;
+}
+.btn-primary {
+  background-color: #2d4492 !important;
+  font-weight: bold;
+}
+.btn-primary:hover {
+  color: #2d4492 !important;
+  background-color: white !important;
+}
+.box__btn {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+.box__btn a {
+  margin-top: 15px;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+.box__btn a:hover {
+  color: red;
+}
+.box__btn .btn {
+  width: 80%;
+}
+
+/* SEGUNDA OPÇÃO */
+
+.row2 {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.row2 .col-6 {
+  background-color: rgb(255, 255, 255);
+  width: 50vh;
+  text-align: center;
+  border-radius: 4px;
+  -webkit-box-shadow: 1px 1px 10px 1px #bababa;
+  box-shadow: 1px 1px 10px 1px #bababa;
+}
+
+.row2 .col-6:last-child {
+  background-color: #2d4492;
+  padding: 25px !important;
+}
+
+.instrucao {
+  color: white;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+@media (max-width: 895px) {
+  .row2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .container {
+    margin-top: 0;
+  }
+  .row2 .col-6:first-child{
+    height: 500px;
+  }
+}
